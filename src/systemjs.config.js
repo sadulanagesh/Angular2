@@ -22,6 +22,10 @@
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+      'angular2-chartjs': 'npm:angular2-chartjs',
+      'chart.js': 'npm:chart.js/dist/Chart.bundle.js',
+      'angular2-highcharts': 'node_modules/angular2-highcharts',
+      'highcharts': 'node_modules/highcharts',
 
       // other libraries
       'rxjs':                      'npm:rxjs',
@@ -38,6 +42,18 @@
         }
       },
       rxjs: {
+        defaultExtension: 'js'
+      },
+      'angular2-chartjs': {
+        main: './dist/index.js',
+        defaultExtension: 'js'
+      },
+      highcharts: {
+        main: './highcharts.js',
+        defaultExtension: 'js'
+      },
+      'angular2-highcharts': {
+        main: './index.js',
         defaultExtension: 'js'
       }
     }

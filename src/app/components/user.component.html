@@ -2,7 +2,13 @@
     <head></head>
     <body>
         <div>
-            <button (click)= "userDetails()"></button>
+            <button type="button" (click)= "userDetails()">home</button>
+           <!-- // <button><a routerLink = "user"> home</a></button> -->
+
+          
+        </div>
+        <div *ngFor = "let item of data ">
+                {{item.name}}
         </div>
     </body>
    
